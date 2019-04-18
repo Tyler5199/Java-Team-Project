@@ -2,6 +2,12 @@ package cs310.team.project;
 
 import java.util.HashMap;
 import java.util.regex.Pattern;
+//package edu.jsu.mcis.plinkoproto;
+/**
+ *
+ * @author lemmo
+ */
+
 
 public class GS1_7X extends GS1 {
 
@@ -10,49 +16,69 @@ public class GS1_7X extends GS1 {
         super();
         
         super.matchers = new HashMap<>();
-        
+       
         super.matchers.put("7001",Pattern.compile("^7001[0-9]{13}[%\\x1D]"));//AI #7001
         super.matchers.put("7001eol",Pattern.compile("^7001[0-9]{13}$"));
-        super.matchers.put("7002",Pattern.compile("^7002(.){1,30}[%\\x1D]"));
-        super.matchers.put("7002eol",Pattern.compile("^7002(.){1,30}$"));
+        
+        super.matchers.put("7002" , Pattern.compile("^7002[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]"));
+        super.matchers.put("7002eol",Pattern.compile("^7002[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$"));
+        
         super.matchers.put("7003",Pattern.compile("^7003[0-9]{10}[%\\x1D]"));
         super.matchers.put("7003eol", Pattern.compile("^7003[0-9]{10}$"));
+        
         super.matchers.put("7004",Pattern.compile("^7004[0-9]{1,4}[%\\x1D]"));
         super.matchers.put("7004eol",Pattern.compile("^7004[0-9]{1,4}$"));
-        super.matchers.put("7005",Pattern.compile("^7005(.){1,12}[%\\x1D]"));
-        super.matchers.put("7005eol",Pattern.compile("^7005(.){1,12}$"));
+        
+        super.matchers.put("7005",Pattern.compile("^7005[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}[%\\x1D]"));
+        super.matchers.put("7005eol",Pattern.compile("^7005[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}$"));
+        
         super.matchers.put("7006",Pattern.compile("^7006[0-9]{6}[%\\x1D]"));
         super.matchers.put("7006eol",Pattern.compile("^7006[0-9]{6}$"));
+        
         super.matchers.put("7007",Pattern.compile("^7007[0-9]{6,12}[%\\x1D]"));
         super.matchers.put("7007eol",Pattern.compile("^7007[0-9]{6,12}$"));
-        super.matchers.put("7008",Pattern.compile("^7008(.){1,3}[%\\x1D]"));
-        super.matchers.put("7008eol",Pattern.compile("^7008(.){1,3}$"));
-        super.matchers.put("7009",Pattern.compile("^7009(.){1,10}[%\\x1D]"));
-        super.matchers.put("7009eol",Pattern.compile("^7009(.){1,10}$"));
-        super.matchers.put("7010",Pattern.compile("^7010(.){1,2}[%\\x1D]"));
-        super.matchers.put("7010eol",Pattern.compile("^7010(.){1,2}$"));
-        super.matchers.put("7020",Pattern.compile("^7020(.){1,20}[%\\x1D]"));
-        super.matchers.put("7020eol",Pattern.compile("^7020(.){1,20}$"));
-        super.matchers.put("7021",Pattern.compile("^7021(.){1,20}[%\\x1D]"));
-        super.matchers.put("7021eol",Pattern.compile("^7021(.){1,20}$"));
-        super.matchers.put("7022",Pattern.compile("^7022(.){1,20}[%\\x1D]"));
-        super.matchers.put("7022eol",Pattern.compile("^7022(.){1,20}$"));
-        super.matchers.put("7023",Pattern.compile("^7023(.){1,20}[%\\x1D]"));
-        super.matchers.put("7023eol",Pattern.compile("^7023(.){1,20}$"));
-        super.matchers.put("703s",Pattern.compile("^703s(.){2}(.){1,27}[%\\x1D]"));
-        super.matchers.put("703seol",Pattern.compile("^703s(.){2}(.){1,27}$"));
-        super.matchers.put("710",Pattern.compile("^710(.){1,20}[%\\x1D]"));
-        super.matchers.put("710eol",Pattern.compile("^710(.){1,20}$"));
-        super.matchers.put("711",Pattern.compile("^711(.){1,20}[%\\x1D]"));
-        super.matchers.put("711eol",Pattern.compile("^711(.){1,20}$"));
-        super.matchers.put("712",Pattern.compile("^712(.){1,20}[%\\x1D]"));
-        super.matchers.put("712eol",Pattern.compile("^712(.){1,20}$"));
-        super.matchers.put("713",Pattern.compile("^713(.){1,20}[%\\x1D]"));
-        super.matchers.put("713eol",Pattern.compile("^713(.){1,20}$"));
-        super.matchers.put("714",Pattern.compile("^714(.){1,20}[%\\x1D]"));
-        super.matchers.put("714eol",Pattern.compile("^714(.){1,20}$"));
-        super.matchers.put("723s",Pattern.compile("^723s(.){2}(.){1,28}[%\\x1D]"));
-        super.matchers.put("723s",Pattern.compile("^723s(.){2}(.){1,28}$"));
+        
+        super.matchers.put("7008",Pattern.compile("^7008[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}[%\\x1D]"));
+        super.matchers.put("7008eol",Pattern.compile("^7008[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}$"));
+        
+        super.matchers.put("7009",Pattern.compile("^7009[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,10}[%\\x1D]"));
+        super.matchers.put("7009eol",Pattern.compile("^7009[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,10}$"));
+        
+        super.matchers.put("7010",Pattern.compile("^7010[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,2}[%\\x1D]"));
+        super.matchers.put("7010eol",Pattern.compile("^7010[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,2}$"));
+        
+        super.matchers.put("7020",Pattern.compile("^7020[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("7020eol",Pattern.compile("^7020[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        
+        super.matchers.put("7021",Pattern.compile("^7021[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("7021eol",Pattern.compile("^7021[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        
+        super.matchers.put("7022",Pattern.compile("^7022[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("7022eol",Pattern.compile("^7022[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        
+        super.matchers.put("7023",Pattern.compile("^7023[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("7023eol",Pattern.compile("^7023[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        
+        super.matchers.put("703s",Pattern.compile("^703s[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,27}[%\\x1D]"));
+        super.matchers.put("703seol",Pattern.compile("^703s[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,27}$"));
+        
+        super.matchers.put("710",Pattern.compile("^710[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("710eol",Pattern.compile("^710[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        
+        super.matchers.put("711",Pattern.compile("^711[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("711eol",Pattern.compile("^711[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        
+        super.matchers.put("712",Pattern.compile("^712[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("712eol",Pattern.compile("^712[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        
+        super.matchers.put("713",Pattern.compile("^713[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("713eol",Pattern.compile("^713[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        
+        super.matchers.put("714",Pattern.compile("^714[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("714eol",Pattern.compile("^714[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        
+        super.matchers.put("723s",Pattern.compile("^723s[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,28}[%\\x1D]"));
+        super.matchers.put("723seol",Pattern.compile("^723s[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,28}$"));
         
     }
     
@@ -67,8 +93,8 @@ public class GS1_7X extends GS1 {
         output.put("Data",element.substring(4));
         output.put("Nato supply classification",Integer.parseInt(element.substring(4,8)));
         output.put("Assigning country", Integer.parseInt(element.substring(8,10)));
-        output.put("Sequential number", Integer.parseInt(element.substring(10,16)));
-        output.put("Element", element);
+        output.put("Sequential number", Integer.parseInt(element.substring(10,14)));
+        output.put("element", element);
        
         return output;        
     }
@@ -85,9 +111,10 @@ public class GS1_7X extends GS1 {
         System.out.println("Found Element String: " + element);
         
         output.put("Title", "MEAT CUT");
+        output.put("AI", element.substring(0, 4));
         output.put("Data",element.substring(4));
-        output.put("UN/ECE Product Classification",element.substring(2));
-        output.put("Element",element);
+        output.put("UN/ECE Product Classification" , element.substring(4));
+        output.put("element",element);
         
         return output;
     }
@@ -111,8 +138,7 @@ public class GS1_7X extends GS1 {
         output.put("DD",Integer.parseInt(element.substring(8,10)));
         output.put("HH",Integer.parseInt(element.substring(10,12)));
         output.put("mm",Integer.parseInt(element.substring(12)));
-        output.put("Data field", Integer.parseInt(element.substring(4,12)));
-        output.put("Element", element);
+        output.put("element", element);
         
         return output;
         
@@ -133,7 +159,7 @@ public class GS1_7X extends GS1 {
         output.put("AI",element.substring(0,4));
         output.put("Data",element.substring(4));
         output.put("Active Potency", Integer.parseInt(element.substring(4)));
-        output.put("Element", element);
+        output.put("element", element);
         
         return output;
         
@@ -154,7 +180,7 @@ public class GS1_7X extends GS1 {
         output.put("AI",element.substring(0,4));
         output.put("Data",element.substring(4));
         output.put("Catch area", element.substring(4));
-        output.put("Element", element);
+        output.put("element", element);
         
         return output;
         
@@ -177,7 +203,7 @@ public class GS1_7X extends GS1 {
         output.put("Year",Integer.parseInt(element.substring(4,6)));
         output.put("Month", Integer.parseInt(element.substring(6,8)));
         output.put("Day", Integer.parseInt(element.substring(8)));
-        output.put("Element", element);
+        output.put("element", element);
         
         return output;
                 
@@ -205,7 +231,7 @@ public class GS1_7X extends GS1 {
         output.put("Year", Integer.parseInt(element.substring(10,12)));
         output.put("Month", Integer.parseInt(element.substring(12,14)));
         output.put("Day", Integer.parseInt(element.substring(14)));        
-        output.put("Element", element);
+        output.put("element", element);
         
         return output;
     }
@@ -225,7 +251,7 @@ public class GS1_7X extends GS1 {
         output.put("AI",element.substring(0,4));
         output.put("Data",element.substring(4));
         output.put("Species for fisher purposes",element.substring(4));
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -246,7 +272,7 @@ public class GS1_7X extends GS1 {
         output.put("AI",element.substring(0,4));
         output.put("Data",element.substring(4));
         output.put("Fishing gear type",element.substring(4));
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -268,7 +294,7 @@ public class GS1_7X extends GS1 {
         output.put("AI",element.substring(0,4));
         output.put("Data",element.substring(4));
         output.put("Production method",element.substring(4));
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -290,7 +316,7 @@ public class GS1_7X extends GS1 {
         output.put("AI",element.substring(0,4));
         output.put("Data",element.substring(4));
         output.put("Refurbishment lot ID",element.substring(4));
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -312,7 +338,7 @@ public class GS1_7X extends GS1 {
         output.put("AI",element.substring(0,4));
         output.put("Data",element.substring(4));
         output.put("Functional status",element.substring(4));
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -334,7 +360,7 @@ public class GS1_7X extends GS1 {
         output.put("AI",element.substring(0,4));
         output.put("Data",element.substring(4));
         output.put("Revision status",element.substring(4));
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -356,7 +382,7 @@ public class GS1_7X extends GS1 {
         output.put("AI",element.substring(0,4));
         output.put("Data",element.substring(4));
         output.put("Global Individual Asset Identifier",element.substring(4));
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -369,7 +395,7 @@ public class GS1_7X extends GS1 {
         
     }
     
-    public Object parse703S(String element){
+    public Object parse703s(String element){
         
         HashMap<String, Object> output = new HashMap<>();
         System.out.println("Found Element String: " + element);
@@ -379,16 +405,16 @@ public class GS1_7X extends GS1 {
         output.put("Data",element.substring(4));
         output.put("ISO country code",Integer.parseInt(element.substring(4,7)));
         output.put("Number of processor",element.substring(7));
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
         
     }
     
-    public Object parse703Seol(String element){
+    public Object parse703seol(String element){
         
-        return parse703S(element);
+        return parse703s(element);
         
     }   
     
@@ -402,7 +428,7 @@ public class GS1_7X extends GS1 {
         output.put("Data",element.substring(3));
         output.put("National Healthcare Reimbursement Number",element.substring(3));
         output.put("Organisation","Germany IFA");
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -425,7 +451,7 @@ public class GS1_7X extends GS1 {
         output.put("Data",element.substring(3));
         output.put("National Healthcare Reimbursement Number",element.substring(3));
         output.put("Organisation","France CIP");
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -448,7 +474,7 @@ public class GS1_7X extends GS1 {
         output.put("Data",element.substring(3));
         output.put("National Healthcare Reimbursement Number",element.substring(3));
         output.put("Organisation","Spain National Code");
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -471,7 +497,7 @@ public class GS1_7X extends GS1 {
         output.put("Data",element.substring(3));
         output.put("National Healthcare Reimbursement Number",element.substring(3));
         output.put("Organisation","Brazil ANVISA");
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -494,7 +520,7 @@ public class GS1_7X extends GS1 {
         output.put("Data",element.substring(3));
         output.put("National Healthcare Reimbursement Number",element.substring(3));
         output.put("Organisation","POrtugal INFARMED");
-        output.put("Element",element);
+        output.put("element",element);
         
         return output;
         
@@ -507,7 +533,7 @@ public class GS1_7X extends GS1 {
         
     }
 
-    public Object parse723S(String element){
+    public Object parse723s(String element){
         
         HashMap<String, Object> output = new HashMap<>();
         System.out.println("Found Element String: " + element);
@@ -524,9 +550,10 @@ public class GS1_7X extends GS1 {
         
     }
     
-    public Object parse723Seol(String element){
+    public Object parse723seol(String element){
         
-        return parse723S(element);
+        return parse723s(element);
         
-    }  
+    } 
+     
 }

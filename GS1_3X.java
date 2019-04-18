@@ -675,6 +675,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "NET WEIGHT (t)");
         output.put("ai", element.substring(0, 4) );
         output.put("netweight(t)", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+
         output.put("element", element);
         
         return output;
@@ -688,6 +690,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "NET VOLUME (oz)");
         output.put("ai", element.substring(0, 4) );
         output.put("netvolume(oz)", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+            
         output.put("element", element);
         
         return output;
@@ -701,6 +705,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "NET VOLUME (qt)");
         output.put("ai", element.substring(0, 4) );
         output.put("netvolume(qt)", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+          
         output.put("element", element);
         
         return output;
@@ -714,6 +720,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "NET VOLUME (g)");
         output.put("ai", element.substring(0, 4) );
         output.put("netvolume(g)", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+            
         output.put("element", element);
         
         return output;
@@ -728,6 +736,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "NET VOLUME (q)");
         output.put("ai", element.substring(0, 4) );
         output.put("netvolume(q)", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+            
         output.put("element", element);
         
         return output;
@@ -741,6 +751,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "NET VOLUME (g),log");
         output.put("ai", element.substring(0, 4) );
         output.put("netvolume(g)log", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+            
         output.put("element", element);
         
         return output;
@@ -755,6 +767,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "VOLUME (i^3)");
         output.put("ai", element.substring(0, 4) );
         output.put("volume(i^3)", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+
         output.put("element", element);
         
         return output;
@@ -769,6 +783,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "VOLUME (f^3)");
         output.put("ai", element.substring(0, 4) );
         output.put("volume(f^3)", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+            
         output.put("element", element);
         
         return output;
@@ -783,6 +799,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "VOLUME (y^3)");
         output.put("ai", element.substring(0, 4) );
         output.put("volume(y^3)", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+            
         output.put("element", element);
         
         return output;
@@ -797,6 +815,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "VOLUME (i^3),log");
         output.put("ai", element.substring(0, 4) );
         output.put("volume(i^3)log", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+            
         output.put("element", element);
         
         return output;
@@ -811,6 +831,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "VOLUME (f^3),log");
         output.put("ai", element.substring(0, 4) );
         output.put("volume(f^3)log", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+            
         output.put("element", element);
         
         return output;
@@ -824,6 +846,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "VOLUME (y^3),log");
         output.put("ai", element.substring(0, 4) );
         output.put("volume(y^3)log", Integer.parseInt( element.substring(4, 10) ));
+        output.put("number", Integer.parseInt( element.substring(4, 10) ));
+            
         output.put("element", element);
         
         return output;
@@ -839,6 +863,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "COUNT IN UNIT");
         output.put("ai", element.substring(0, 2) );
         output.put("count", Integer.parseInt( element.substring(2) ));
+        output.put("number", Integer.parseInt( element.substring(2) ));
+          
         output.put("element", element);
         
         return output;
@@ -859,6 +885,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "AMOUNT");
         output.put("ai", element.substring(0, 4) );
         output.put("amount", Integer.parseInt( element.substring(4) ));
+        output.put("number", Integer.parseInt( element.substring(4) ));
+         
         output.put("element", element);
         
         return output;
@@ -878,6 +906,8 @@ public class GS1_3X extends GS1 {
         output.put("ai", element.substring(0, 4) );
         output.put("ISOccode", Integer.parseInt( element.substring(4, 7) ));
         output.put("amount", Integer.parseInt( element.substring(7) ));
+        output.put("number", Integer.parseInt( element.substring(4) ));
+            
         output.put("element", element);
         
         return output;
@@ -896,6 +926,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "PRICE");
         output.put("ai", element.substring(0, 4) );
         output.put("price", Integer.parseInt( element.substring(4) ));
+        output.put("number", Integer.parseInt( element.substring(4) ));
+            
         output.put("element", element);
         
         return output;
@@ -915,6 +947,8 @@ public class GS1_3X extends GS1 {
         output.put("ai", element.substring(0, 4) );
         output.put("ISOccode", Integer.parseInt( element.substring(4, 7) ));
         output.put("price", Integer.parseInt( element.substring(7) ));
+        output.put("number", Integer.parseInt( element.substring(4) ));
+            
         output.put("element", element);
         
         return output;
@@ -933,6 +967,8 @@ public class GS1_3X extends GS1 {
         output.put("title", "PRCNT OFF");
         output.put("ai", element.substring(0, 4) );
         output.put("prcnt off", Integer.parseInt( element.substring(4) ));
+        output.put("number", Integer.parseInt( element.substring(4) ));
+            
         output.put("element", element);
         
         return output;

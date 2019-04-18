@@ -15,8 +15,8 @@ public class GS1_0X extends GS1 {
         super.matchers.put( "01", Pattern.compile("^01[0-9]{14}") );          // AI #01 
         super.matchers.put( "02", Pattern.compile("^02[0-9]{14}") );          // AI #02
         super.matchers.put( "17", Pattern.compile("^17[0-9]{6}") );          // AI #17        
-        super.matchers.put( "10", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
-        super.matchers.put( "10eol", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+        super.matchers.put( "10", Pattern.compile("^10[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #10
+        super.matchers.put( "10eol", Pattern.compile("^10[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #10 (eol)
         super.matchers.put( "11", Pattern.compile("^11[0-9]{6}") );         // AI #11
         super.matchers.put( "12", Pattern.compile("^12[0-9]{6}") );         // AI #12
         super.matchers.put( "13", Pattern.compile("^13[0-9]{6}") );         // AI #13
@@ -25,38 +25,38 @@ public class GS1_0X extends GS1 {
         super.matchers.put( "17", Pattern.compile("^17[0-9]{6}") );         // AI #17
         super.matchers.put( "20", Pattern.compile("^20[0-9]{2}") );         // AI #20
 
-        super.matchers.put( "21", Pattern.compile("^21(.){1,20}[%\\x1D]") ); // AI #21
-        super.matchers.put( "21eol", Pattern.compile("^21(.){1,20}$") );     // AI #21 (eol)
+        super.matchers.put( "21", Pattern.compile("^21([!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]){1,20}[%\\x1D]") ); // AI #21
+        super.matchers.put( "21eol", Pattern.compile("^21([!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]){1,20}$") );     // AI #21 (eol)
 
-        super.matchers.put( "22", Pattern.compile("^22(.){1,20}[%\\x1D]") ); // AI #22
-        super.matchers.put( "22eol", Pattern.compile("^22(.){1,20}$") );     // AI #22 (eol)
+        super.matchers.put( "22", Pattern.compile("^22[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #22
+        super.matchers.put( "22eol", Pattern.compile("^22[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #22 (eol)
 
-        super.matchers.put( "240", Pattern.compile("^240(.){1,30}[%\\x1D]") ); // AI #240
-        super.matchers.put( "240eol", Pattern.compile("^240(.){1,30}$") );     // AI #240 (eol)
+        super.matchers.put( "240", Pattern.compile("^240[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") ); // AI #240
+        super.matchers.put( "240eol", Pattern.compile("^240[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #240 (eol)
 
-        super.matchers.put( "241", Pattern.compile("^241(.){1,30}[%\\x1D]") ); // AI #241
-        super.matchers.put( "241eol", Pattern.compile("^241(.){1,30}$") );     // AI #241 (eol)
+        super.matchers.put( "241", Pattern.compile("^241[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") ); // AI #241
+        super.matchers.put( "241eol", Pattern.compile("^241[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #241 (eol)
 
-        super.matchers.put( "242", Pattern.compile("^242(.){1,6}[%\\x1D]") ); // AI #242
-        super.matchers.put( "242eol", Pattern.compile("^242(.){1,6}$") );     // AI #242 (eol)
+        super.matchers.put( "242", Pattern.compile("^242[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,6}[%\\x1D]") ); // AI #242
+        super.matchers.put( "242eol", Pattern.compile("^242[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,6}$") );     // AI #242 (eol)
 
-        super.matchers.put( "243", Pattern.compile("^243(.){1,20}[%\\x1D]") ); // AI #243
-        super.matchers.put( "243eol", Pattern.compile("^243(.){1,20}$") );     // AI #243 (eol)
+        super.matchers.put( "243", Pattern.compile("^243[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #243
+        super.matchers.put( "243eol", Pattern.compile("^243[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #243 (eol)
 
-        super.matchers.put( "250", Pattern.compile("^250(.){1,30}[%\\x1D]") ); // AI #250
-        super.matchers.put( "250eol", Pattern.compile("^250(.){1,30}$") );     // AI #250 (eol)
+        super.matchers.put( "250", Pattern.compile("^250[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") ); // AI #250
+        super.matchers.put( "250eol", Pattern.compile("^250[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #250 (eol)
 
-        super.matchers.put( "251", Pattern.compile("^251(.){1,30}[%\\x1D]") ); // AI #251
-        super.matchers.put( "251eol", Pattern.compile("^251(.){1,30}$") );     // AI #251 (eol)
+        super.matchers.put( "251", Pattern.compile("^251[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") ); // AI #251
+        super.matchers.put( "251eol", Pattern.compile("^251[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #251 (eol)
 
-        super.matchers.put( "253", Pattern.compile("^253(.){1,13}[%\\x1D]") ); // AI #253
-        super.matchers.put( "253eol", Pattern.compile("^253(.){1,13}$") );     // AI #253 (eol)
+        super.matchers.put( "253", Pattern.compile("^253[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,13}[%\\x1D]") ); // AI #253
+        super.matchers.put( "253eol", Pattern.compile("^253[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,13}$") );     // AI #253 (eol)
 
-        super.matchers.put( "254", Pattern.compile("^254(.){1,20}[%\\x1D]") ); // AI #254
-        super.matchers.put( "254eol", Pattern.compile("^254(.){1,20}$") );     // AI #254 (eol)
+        super.matchers.put( "254", Pattern.compile("^254[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #254
+        super.matchers.put( "254eol", Pattern.compile("^254[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #254 (eol)
 
-        super.matchers.put( "255", Pattern.compile("^255(.){1,13}[%\\x1D]") ); // AI #255
-        super.matchers.put( "255eol", Pattern.compile("^255(.){1,13}$") );     // AI #255 (eol)
+        super.matchers.put( "255", Pattern.compile("^255[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,13}[%\\x1D]") ); // AI #255
+        super.matchers.put( "255eol", Pattern.compile("^255[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,13}$") );     // AI #255 (eol)
               
         
     }
@@ -67,8 +67,8 @@ public class GS1_0X extends GS1 {
         System.out.println("Found Element String: " + element);
         
         output.put("title", "SSCC");
-        output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(3, 18) );
+        output.put("ai", element.substring(0, 2) );        
+        output.put("datafield", element.substring(3, 18) );
         output.put("element", element);
         
         return output;
@@ -82,7 +82,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "GTIN");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(3, 14) );
+        output.put("datafield", element.substring(3, 14) );
         output.put("element", element);
         
         return output;
@@ -96,7 +96,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "CONTENT");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(3, 14) );
+        output.put("datafield", element.substring(3, 14) );
         output.put("element", element);
         
         return output;
@@ -110,8 +110,17 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "BATCH/LOT");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield", element.substring(2) );
         output.put("element", element);
+        
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -133,6 +142,7 @@ public class GS1_0X extends GS1 {
         output.put("year", Integer.parseInt( element.substring(2, 4) ));
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
+        output.put("datafield", element.substring(3, 8) );
         output.put("element", element);
         
         return output;
@@ -149,6 +159,7 @@ public class GS1_0X extends GS1 {
         output.put("year", Integer.parseInt( element.substring(2, 4) ));
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
+        output.put("datafield", element.substring(3, 8) );
         output.put("element", element);
         
         return output;
@@ -165,6 +176,7 @@ public class GS1_0X extends GS1 {
         output.put("year", Integer.parseInt( element.substring(2, 4) ));
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
+        output.put("datafield", element.substring(3, 8) );
         output.put("element", element);
         
         return output;
@@ -181,6 +193,7 @@ public class GS1_0X extends GS1 {
         output.put("year", Integer.parseInt( element.substring(2, 4) ));
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
+        output.put("datafield", element.substring(3, 8) );
         output.put("element", element);
         
         return output;
@@ -197,6 +210,7 @@ public class GS1_0X extends GS1 {
         output.put("year", Integer.parseInt( element.substring(2, 4) ));
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
+        output.put("datafield", element.substring(3, 8) );
         output.put("element", element);
         
         return output;
@@ -213,6 +227,7 @@ public class GS1_0X extends GS1 {
         output.put("year", Integer.parseInt( element.substring(2, 4) ));
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
+        output.put("datafield", element.substring(3, 8) );
         output.put("element", element);
         
         return output;
@@ -226,7 +241,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "VARIANT");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield", element.substring(2) );
         output.put("element", element);
         
         return output;
@@ -240,8 +255,17 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "SERIAL");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield", element.substring(2) );
         output.put("element", element);
+        
+                
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -260,8 +284,16 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "CPV");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield", element.substring(2) );
         output.put("element", element);
+        
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -280,8 +312,16 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "ADDITIONAL ID");
         output.put("ai", element.substring(0, 3) );
-        output.put("number", element.substring(4) );
+        output.put("datafield", element.substring(3, 4) );
         output.put("element", element);
+        
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -300,8 +340,16 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "CUST. PART NO.");
         output.put("ai", element.substring(0, 3) );
-        output.put("number", element.substring(4) );
+        output.put("datafield", element.substring(4) );
         output.put("element", element);
+        
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -320,8 +368,16 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "MTO VARIANT");
         output.put("ai", element.substring(0, 3) );
-        output.put("number", element.substring(4, 6) );
+        output.put("datafield", element.substring(4, 6) );
         output.put("element", element);
+        
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -340,9 +396,16 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "PCN");
         output.put("ai", element.substring(0, 3) );
-        output.put("number", element.substring(4) );
+        output.put("datafield", element.substring(4) );
         output.put("element", element);
         
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         return output;
         
     }
@@ -360,8 +423,16 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "SECONDARY SERIAL");
         output.put("ai", element.substring(0, 3) );
-        output.put("number", element.substring(4) );
+        output.put("datafield", element.substring(4) );
         output.put("element", element);
+        
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -380,8 +451,16 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "REF. TO SOURCE");
         output.put("ai", element.substring(0, 3) );
-        output.put("number", element.substring(4) );
+        output.put("datafield", element.substring(4) );
         output.put("element", element);
+        
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -400,9 +479,17 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "GDTI");
         output.put("ai", element.substring(0, 3) );
-        output.put("number", element.substring(4, 12) );
+        output.put("datafield", element.substring(4, 12) );
         output.put("number #2", element.substring(13) );
         output.put("element", element);
+        
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -421,8 +508,16 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "GLN EXTENSION COMPONENT");
         output.put("ai", element.substring(0, 3) );
-        output.put("number", element.substring(4) );
+        output.put("datafield", element.substring(4) );
         output.put("element", element);
+        
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         
@@ -441,9 +536,17 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "GDTI");
         output.put("ai", element.substring(0, 3) );
-        output.put("number", element.substring(4, 12) );
+        output.put("datafield", element.substring(4, 12) );
         output.put("number #2", element.substring(13) );
         output.put("element", element);
+        
+                char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
         
         return output;
         

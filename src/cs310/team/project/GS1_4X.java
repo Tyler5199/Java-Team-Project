@@ -14,14 +14,14 @@ public class GS1_4X extends GS1 {
         
         //Creating Pattern Matchers and Storing them in a Hashmap
         
-        super.matchers.put("400", Pattern.compile("^400(.){1,30}[%\\x1D]"));
-        super.matchers.put("400eol", Pattern.compile("^400(.){1,30}$"));
-        super.matchers.put("401", Pattern.compile("^401(.){1,30}[%\\x1D]"));
-        super.matchers.put("401eol", Pattern.compile("^401(.){1,30}$"));
+        super.matchers.put("400", Pattern.compile("^400[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]"));
+        super.matchers.put("400eol", Pattern.compile("^400[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$"));
+        super.matchers.put("401", Pattern.compile("^401[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]"));
+        super.matchers.put("401eol", Pattern.compile("^401[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$"));
         super.matchers.put("402", Pattern.compile("^402[0-9]{17}[%\\x1D]"));
         super.matchers.put("402eol", Pattern.compile("^402[0-9]{17}$"));
-        super.matchers.put("403", Pattern.compile("^403(.){1,30}[%\\x1D]"));
-        super.matchers.put("403eol", Pattern.compile("^403(.){1,30}$"));
+        super.matchers.put("403", Pattern.compile("^403[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]"));
+        super.matchers.put("403eol", Pattern.compile("^403[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$"));
         super.matchers.put("410", Pattern.compile("^410[0-9]{13}"));
         super.matchers.put("411", Pattern.compile("^411[0-9]{13}"));
         super.matchers.put("412", Pattern.compile("^412[0-9]{13}"));
@@ -29,10 +29,10 @@ public class GS1_4X extends GS1 {
         super.matchers.put("414", Pattern.compile("^414[0-9]{13}"));
         super.matchers.put("415", Pattern.compile("^415[0-9]{13}"));
         super.matchers.put("416", Pattern.compile("^416[0-9]{13}"));
-        super.matchers.put("420", Pattern.compile("^420(.){1,20}[%\\x1D]"));
-        super.matchers.put("420eol", Pattern.compile("^420(.){1,20}$"));
-        super.matchers.put("421", Pattern.compile("^420(.){1,20}$"));
-        super.matchers.put("421eol", Pattern.compile("^421[0,9]{3}(.){1,9}$"));
+        super.matchers.put("420", Pattern.compile("^420[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
+        super.matchers.put("420eol", Pattern.compile("^420[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        super.matchers.put("421", Pattern.compile("^420[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
+        super.matchers.put("421eol", Pattern.compile("^421[0,9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,9}$"));
         super.matchers.put("422", Pattern.compile("^422[0-9]{3}[%\\x1D]"));
         super.matchers.put("422eol", Pattern.compile("^421[0,9]{3}$"));
         super.matchers.put("423", Pattern.compile("^423[0-9]{3}[0-9]{1,12}[%\\x1D]"));
@@ -43,8 +43,8 @@ public class GS1_4X extends GS1 {
         super.matchers.put("425eol", Pattern.compile("^425[0-9]{3}[0-9]{1,12}$"));
         super.matchers.put("426", Pattern.compile("^426[0-9]{3}[%\\x1D]"));
         super.matchers.put("426eol", Pattern.compile("^426[0-9]{3}$"));
-        super.matchers.put("427", Pattern.compile("^427(.){1,3}[%\\x1D]"));
-        super.matchers.put("427eol", Pattern.compile("^427(.){1,3}$"));
+        super.matchers.put("427", Pattern.compile("^427[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}[%\\x1D]"));
+        super.matchers.put("427eol", Pattern.compile("^427[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}$"));
   
     }
 
