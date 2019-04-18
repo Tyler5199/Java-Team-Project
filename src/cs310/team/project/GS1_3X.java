@@ -33,55 +33,55 @@ public class GS1_3X extends GS1 {
         super.matchers.put( "330n", Pattern.compile("^330n[0-9]{1}[0-9]{6}"));   // AI #330n
         super.matchers.put( "331n", Pattern.compile("^331n[0-9]{1}[0-9]{6}"));   // AI #331n
         
-        super.matchers.put( "332", Pattern.compile("^332[0-9](.){6}") );              
-        super.matchers.put( "333", Pattern.compile("^333[0-9](.){6}") ); 
-        super.matchers.put( "334", Pattern.compile("^334[0-9](.){6}") );              
-        super.matchers.put( "335", Pattern.compile("^335[0-9](.){6}") );
-        super.matchers.put( "336", Pattern.compile("^336[0-9](.){6}") ); 
-        super.matchers.put( "337", Pattern.compile("^337[0-9](.){6}") );
-        super.matchers.put( "340", Pattern.compile("^340[0-9](.){6}") ); 
-        super.matchers.put( "341", Pattern.compile("^341[0-9](.){6}") );              
-        super.matchers.put( "342", Pattern.compile("^342[0-9](.){6}") );
-        super.matchers.put( "343", Pattern.compile("^343[0-9](.){6}") );              
-        super.matchers.put( "344", Pattern.compile("^344-9](.){6}") ); 
-        super.matchers.put( "345", Pattern.compile("^345[0-9](.){6}") );              
-        super.matchers.put( "346", Pattern.compile("^346[0-9](.){6}") );
-        super.matchers.put( "347", Pattern.compile("^347[0-9](.){6}") );              
-        super.matchers.put( "348", Pattern.compile("^348[0-9](.){6}") ); 
-        super.matchers.put( "349", Pattern.compile("^349[0-9](.){6}") ); 
-        super.matchers.put( "350", Pattern.compile("^350[0-9](.){6}") );
-        super.matchers.put( "351", Pattern.compile("^351[0-9](.){6}") );
-        super.matchers.put( "352", Pattern.compile("^352[0-9](.){6}") );
+        super.matchers.put( "332", Pattern.compile("^332[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "333", Pattern.compile("^333[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
+        super.matchers.put( "334", Pattern.compile("^334[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "335", Pattern.compile("^335[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
+        super.matchers.put( "336", Pattern.compile("^336[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
+        super.matchers.put( "337", Pattern.compile("^337[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
+        super.matchers.put( "340", Pattern.compile("^340[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
+        super.matchers.put( "341", Pattern.compile("^341[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "342", Pattern.compile("^342[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
+        super.matchers.put( "343", Pattern.compile("^343[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "344", Pattern.compile("^344-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
+        super.matchers.put( "345", Pattern.compile("^345[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "346", Pattern.compile("^346[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
+        super.matchers.put( "347", Pattern.compile("^347[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "348", Pattern.compile("^348[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
+        super.matchers.put( "349", Pattern.compile("^349[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
+        super.matchers.put( "350", Pattern.compile("^350[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
+        super.matchers.put( "351", Pattern.compile("^351[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
+        super.matchers.put( "352", Pattern.compile("^352[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
         
-        super.matchers.put( "354", Pattern.compile("^354[0-9](.){6}") );              
-        super.matchers.put( "355", Pattern.compile("^355[0-9](.){6}") ); 
-        super.matchers.put( "356", Pattern.compile("^356[0-9](.){6}") );              
-        super.matchers.put( "357", Pattern.compile("^357[0-9](.){6}") );
+        super.matchers.put( "354", Pattern.compile("^354[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "355", Pattern.compile("^355[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
+        super.matchers.put( "356", Pattern.compile("^356[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "357", Pattern.compile("^357[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
 
-        super.matchers.put( "360", Pattern.compile("^360[0-9](.){6}") );              
-        super.matchers.put( "361", Pattern.compile("^361[0-9](.){6}") ); 
-        super.matchers.put( "362", Pattern.compile("^362[0-9](.){6}") );              
-        super.matchers.put( "363", Pattern.compile("^363[0-9](.){6}") );
-        super.matchers.put( "364", Pattern.compile("^364[0-9](.){6}") );              
-        super.matchers.put( "365", Pattern.compile("^365[0-9](.){6}") ); 
-        super.matchers.put( "366", Pattern.compile("^366[0-9](.){6}") );              
-        super.matchers.put( "367", Pattern.compile("^367[0-9](.){6}") );
-        super.matchers.put( "368", Pattern.compile("^368[0-9](.){6}") );              
-        super.matchers.put( "369", Pattern.compile("^369[0-9](.){6}") ); 
+        super.matchers.put( "360", Pattern.compile("^360[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "361", Pattern.compile("^361[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
+        super.matchers.put( "362", Pattern.compile("^362[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "363", Pattern.compile("^363[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
+        super.matchers.put( "364", Pattern.compile("^364[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "365", Pattern.compile("^365[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
+        super.matchers.put( "366", Pattern.compile("^366[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "367", Pattern.compile("^367[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );
+        super.matchers.put( "368", Pattern.compile("^368[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") );              
+        super.matchers.put( "369", Pattern.compile("^369[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}") ); 
        
          
         super.matchers.put( "37", Pattern.compile("^37[0-9]{1,8}[%\\x1D]") );  
         super.matchers.put( "37eol", Pattern.compile("^^37[0-9]{1,8}$") ); 
-        super.matchers.put( "390", Pattern.compile("^390[0-9]{6}(.)[%\\x1D]") );    
-        super.matchers.put( "390eol", Pattern.compile("^390[0-9]{6}(.)$") );  
-        super.matchers.put( "391", Pattern.compile("^391[0-9]{3}(.){1,15}[%\\x1D]") );  
-        super.matchers.put( "391eol", Pattern.compile("^391[0-9]{3}(.){1,15}{1,15}$") );    
-        super.matchers.put( "392", Pattern.compile("^392[0-9](.){1,15}[%\\x1D]") );  
-        super.matchers.put( "392eol", Pattern.compile("^392[0-9](.){1,15}$") );
-        super.matchers.put( "393", Pattern.compile("^393[0-9]{3}(.){1,15}[%\\x1D]") );  
-        super.matchers.put( "393eol", Pattern.compile("^393[0-9]{3}(.){1,15}{1,15}$") );
-        super.matchers.put( "394", Pattern.compile("^394[0-9](.){4}[%\\x1D]") );  
-        super.matchers.put( "394eol", Pattern.compile("^394[0-9](.){4}$") ); 
+        super.matchers.put( "390", Pattern.compile("^390[0-9]{6}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z][%\\x1D]") );    
+        super.matchers.put( "390eol", Pattern.compile("^390[0-9]{6}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]$") );  
+        super.matchers.put( "391", Pattern.compile("^391[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}[%\\x1D]") );  
+        super.matchers.put( "391eol", Pattern.compile("^391[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}{1,15}$") );    
+        super.matchers.put( "392", Pattern.compile("^392[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}[%\\x1D]") );  
+        super.matchers.put( "392eol", Pattern.compile("^392[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}$") );
+        super.matchers.put( "393", Pattern.compile("^393[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}[%\\x1D]") );  
+        super.matchers.put( "393eol", Pattern.compile("^393[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}{1,15}$") );
+        super.matchers.put( "394", Pattern.compile("^394[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{4}[%\\x1D]") );  
+        super.matchers.put( "394eol", Pattern.compile("^394[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{4}$") ); 
 
         
     }
