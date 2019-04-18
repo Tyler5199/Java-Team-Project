@@ -130,12 +130,31 @@ public class PlinkoMasterParser {
                         break;
                     }
                     
-                    if (exclusions.contains("8026") && (exclusions.contains("02") || exclusions.contains("8006")|| exclusions.contains("255"))) {
+                    if (exclusions.contains("8026") && (exclusions.contains("02") || exclusions.contains("8006")|| exclusions.contains("255")) {
                         System.out.println("Break\n");
                         break;
                     } 
                     
-                  
+                      if(exclusions.contains("010") && (!exclusions.contains("30") || !exclusions.contains("3")) {
+                     System.out.println("Mandatory Data Relationship Error");    
+
+                    }
+
+                    if(exclusions.contains("019") && (!exclusions.contains("30") || !exclusions.contains("3") || !exclusions.contains("8001"))) {
+                     System.out.println("Mandatory Data Relationship Error");    
+
+                    }
+
+                     if(exclusions.contains("029") && (!exclusions.contains("30") || !exclusions.contains("3") || !exclusions.contains("8001"))) {
+                      System.out.println("Mandatory Data Relationship Error");  
+                    }
+
+                     if(exclusions.contains("019") && (!exclusions.contains("242"))) {
+                     System.out.println("Mandatory Data Relationship Error");    
+
+                    }
+
+                    
                      if(exclusions.contains("02") && (!exclusions.contains("00") || !exclusions.contains("37"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
@@ -146,49 +165,49 @@ public class PlinkoMasterParser {
 
                     }
 
-                     if(exclusions.contains("11") && !exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026")) {
+                     if(exclusions.contains("11") && (!exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
                     }
 
-                      if(exclusions.contains("13") && !exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026")) {
+                      if(exclusions.contains("13") && (!exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
                     }
 
                    
-                      if(exclusions.contains("15") && !exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026")) {
+                      if(exclusions.contains("15") && (!exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
                     }       
 
-                      if(exclusions.contains("16") && !exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026")) {
+                      if(exclusions.contains("16") && (!exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
                     }
 
                     
-                      if(exclusions.contains("17") && !exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026")) {
+                      if(exclusions.contains("17") && (!exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
                     }
 
-                    if(exclusions.contains("12") && !exclusions.contains("8020") || !exclusions.contains("415") {
+                    if(exclusions.contains("12") && (!exclusions.contains("8020") || !exclusions.contains("415"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
                     }
 
-                    if(exclusions.contains("17") && !exclusions.contains("255") {
+                    if(exclusions.contains("17") && (!exclusions.contains("255"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
                     }
 
-                    if(exclusions.contains("20") && !exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026")) {
+                    if(exclusions.contains("20") && (!exclusions.contains("01") || !exclusions.contains("02") || !exclusions.contains("8006") || !exclusions.contains("8026"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
                     }
 
-                   if(exclusions.contains("21") && !exclusions.contains("01") || !exclusions.contains("8006") {
+                   if(exclusions.contains("21") && (!exclusions.contains("01") || !exclusions.contains("8006"))) {
                      System.out.println("Mandatory Data Relationship Error");    
 
                     }
