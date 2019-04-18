@@ -149,7 +149,87 @@ public class PlinkoMasterParser {
                     if(exclusions.contains("243") && exclusions.contains("01")) {
                         System.out.println("Manditory Data Relationship Error"); 
                     }
+                     
+                    if(exclusions.contains("7001") && (!exclusions.contains("01")||!exclusions.contains("02"))||(!exclusions.contains("8006")||!exclusions.contains("8026"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
                     
+                    if(exclusions.contains("7002") && (!exclusions.contains("01")||!exclusions.contains("02"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("7003") && (!exclusions.contains("01")||!exclusions.contains("02"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("7004") && (!exclusions.contains("01")||!exclusions.contains("10"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("7005") && (!exclusions.contains("01")||!exclusions.contains("02"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("7006") && (!exclusions.contains("01")||!exclusions.contains("02"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("7007") && (!exclusions.contains("01")||!exclusions.contains("02"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+                    
+                    if(exclusions.contains("7008") && (!exclusions.contains("01")||!exclusions.contains("02"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("7009") && (!exclusions.contains("01")||exclusions.contains("02"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("7010") && (!exclusions.contains("01")||!exclusions.contains("02"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("703s") && (!exclusions.contains("01")||!exclusions.contains("02"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("710") && !exclusions.contains("01")) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("711") && !exclusions.contains("01")) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("712") && !exclusions.contains("01")) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("713") && !exclusions.contains("01")) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+                    
+                    if(exclusions.contains("714") && !exclusions.contains("01")) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+                    
+                    if(exclusions.contains("7020") && ( (!exclusions.contains("01") || !exclusions.contains("8006") ) && !exclusions.contains("416"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+                    
+                    if(exclusions.contains("7021") && (!exclusions.contains("01") || !exclusions.contains("8006"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
+                    if(exclusions.contains("7022") && ( (!exclusions.contains("01") || !exclusions.contains("8006") ) && !exclusions.contains("7021"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+                    
+                    if(exclusions.contains("723s") && (!exclusions.contains("01") || !exclusions.contains("8004"))) {
+                        System.out.println("Manditory Data Relationship Error"); 
+                    }
+
                     System.out.println(results);
 
                 }

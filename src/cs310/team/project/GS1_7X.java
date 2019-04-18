@@ -554,5 +554,6 @@ public class GS1_7X extends GS1 {
         
         return parse723s(element);
         
-    }  
+    } 
+     
 }
