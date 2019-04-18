@@ -82,8 +82,17 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "GTIN");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield", element.substring(3, 14) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         

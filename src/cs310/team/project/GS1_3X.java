@@ -123,6 +123,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET WEIGHT (kg)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("weight (kg)", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -137,6 +138,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "LENGTH (m)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("weight", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -151,6 +153,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "WIDTH (m)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("width", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -165,6 +168,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "HEIGHT (m)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("height", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -179,6 +183,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "AREA (m2)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("area", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -193,6 +198,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET VOLUME (l)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("net volume", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -207,6 +213,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET VOLUME (m2)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("net volume", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -221,6 +228,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET WEIGHT (lb)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("weight (lb)", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -235,6 +243,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "LENGTH (i)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("length", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -249,6 +258,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "LENGTH (f)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("length", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -263,6 +273,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "LENGTH (y)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("length", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -277,6 +288,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "WIDTH (i)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("width", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -291,6 +303,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "WIDTH (f)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("width", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -305,6 +318,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "WIDTH (y)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("width", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -319,6 +333,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "HEIGHT (i)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("height", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -333,6 +348,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "HEIGHT (f)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("height", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -347,6 +363,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "HEIGHT (y)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("height", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -361,6 +378,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "GROSS WEIGHT (kg)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("gross weight", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -375,6 +393,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "LENGTH (m), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4));
         output.put("length", Integer.parseInt( element.substring(4, 6) ));
         output.put("element", element);
         
@@ -389,6 +408,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "WIDTH (m), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("metres", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -403,6 +423,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "HEIGHT (m), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("metres", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -417,6 +438,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "AREA (m^2), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("square metres", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -430,6 +452,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "VOLUME (l), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("litres", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -443,6 +466,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "VOLUME m^3, log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("cubic metres", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -457,6 +481,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "KG PER m^2");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("cubic metres", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -471,6 +496,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "GROSS WEIGHT (lb)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("pounds", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -485,6 +511,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "LENGTH (i), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("inches", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -498,6 +525,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "LENGTH (f), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("feet", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -512,6 +540,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "LENGTH (y), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("yards", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -526,6 +555,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "WIDTH (i), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("inches", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -540,6 +570,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "WIDTH (f), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("feet", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -554,6 +585,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "WIDTH (y), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("yards", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -568,6 +600,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "HEIGHT (i), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("inches", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -581,6 +614,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "HEIGHT (f), log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("feet", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -596,6 +630,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "HEIGHT (y), log");
         output.put("ai", element.substring(0, 2) );
+        output.put("datafield", element.substring(3));
         output.put("yards", Integer.parseInt( element.substring(2) ));
         output.put("element", element);
         
@@ -611,6 +646,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "AREA (i^2)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("square inches", Integer.parseInt( element.substring(4) ));
         output.put("element", element);
         
@@ -625,6 +661,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "AREA (f^2)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("ISOccode", Integer.parseInt( element.substring(4, 7) ));
         output.put("square feet", Integer.parseInt( element.substring(7) ));
         output.put("element", element);
@@ -640,6 +677,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "AREA (y^2)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("square yards", Integer.parseInt( element.substring(4) ));
         output.put("element", element);
         
@@ -654,6 +692,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "AREA SQUARE YARDS");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("squareyards", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -668,6 +707,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET WEIGHT (t)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("netweight(t)", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -681,6 +721,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET VOLUME (oz)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("netvolume(oz)", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -694,6 +735,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET VOLUME (qt)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("netvolume(qt)", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -707,6 +749,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET VOLUME (g)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("netvolume(g)", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -721,6 +764,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET VOLUME (q)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("netvolume(q)", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -734,6 +778,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "NET VOLUME (g),log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("netvolume(g)log", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -748,6 +793,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "VOLUME (i^3)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("volume(i^3)", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -762,6 +808,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "VOLUME (f^3)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("volume(f^3)", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -776,6 +823,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "VOLUME (y^3)");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("volume(y^3)", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -790,6 +838,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "VOLUME (i^3),log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("volume(i^3)log", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -804,6 +853,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "VOLUME (f^3),log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("volume(f^3)log", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -817,6 +867,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "VOLUME (y^3),log");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("volume(y^3)log", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         
@@ -839,9 +890,9 @@ public class GS1_3X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -869,9 +920,9 @@ public class GS1_3X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -898,9 +949,9 @@ public class GS1_3X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -926,9 +977,9 @@ public class GS1_3X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -955,9 +1006,9 @@ public class GS1_3X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -976,6 +1027,7 @@ public class GS1_3X extends GS1 {
         
         output.put("title", "PRCNT OFF");
         output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(3));
         output.put("prcnt off", Integer.parseInt( element.substring(4) ));
         output.put("element", element);
         

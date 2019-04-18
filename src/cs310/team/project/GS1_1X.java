@@ -61,8 +61,17 @@ public class GS1_1X extends GS1 {
 
     output.put("title", "BATCH/LOT");
     output.put("ai", element.substring(0, 2) );
-    output.put("datafield", element.substring(2) );
     output.put("element", element);
+    
+    char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
 
     return output;
 
@@ -81,6 +90,7 @@ public class GS1_1X extends GS1 {
 
     output.put("title", "Production Date");
     output.put("ai", element.substring(0, 2) );
+    output.put("datafield", element.substring(2));
     output.put("year", Integer.parseInt( element.substring(2, 4) ));
     output.put("month", Integer.parseInt( element.substring(4, 6) ));
     output.put("day", Integer.parseInt( element.substring(6, 8) ));
@@ -97,6 +107,7 @@ public class GS1_1X extends GS1 {
 
     output.put("title", "Due Date");
     output.put("ai", element.substring(0, 2) );
+    output.put("datafield", element.substring(2));
     output.put("year", Integer.parseInt( element.substring(2, 4) ));
     output.put("month", Integer.parseInt( element.substring(4, 6) ));
     output.put("day", Integer.parseInt( element.substring(6, 8) ));
@@ -113,6 +124,7 @@ public class GS1_1X extends GS1 {
 
     output.put("title", "Pack Date");
     output.put("ai", element.substring(0, 2) );
+    output.put("datafield", element.substring(2));
     output.put("year", Integer.parseInt( element.substring(2, 4) ));
     output.put("month", Integer.parseInt( element.substring(4, 6) ));
     output.put("day", Integer.parseInt( element.substring(6, 8) ));
@@ -129,6 +141,7 @@ public class GS1_1X extends GS1 {
 
     output.put("title", "BEST BEFORE or BEST BY");
     output.put("ai", element.substring(0, 2) );
+    output.put("datafield", element.substring(2));
     output.put("year", Integer.parseInt( element.substring(2, 4) ));
     output.put("month", Integer.parseInt( element.substring(4, 6) ));
     output.put("day", Integer.parseInt( element.substring(6, 8) ));
@@ -145,6 +158,7 @@ public class GS1_1X extends GS1 {
 
     output.put("title", "Sell By");
     output.put("ai", element.substring(0, 2) );
+    output.put("datafield", element.substring(2));
     output.put("year", Integer.parseInt( element.substring(2, 4) ));
     output.put("month", Integer.parseInt( element.substring(4, 6) ));
     output.put("day", Integer.parseInt( element.substring(6, 8) ));
@@ -165,6 +179,16 @@ public class GS1_1X extends GS1 {
     output.put("month", Integer.parseInt( element.substring(4, 6) ));
     output.put("day", Integer.parseInt( element.substring(6, 8) ));
     output.put("element", element);
+    
+    char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
 
     return output;
 

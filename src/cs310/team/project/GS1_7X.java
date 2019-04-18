@@ -90,7 +90,7 @@ public class GS1_7X extends GS1 {
         
         output.put("Title", "NSN");
         output.put("AI",element.substring(0,4));
-        output.put("Data",element.substring(4));
+        output.put("datafield",element.substring(4));
         output.put("Nato supply classification",Integer.parseInt(element.substring(4,8)));
         output.put("Assigning country", Integer.parseInt(element.substring(8,10)));
         output.put("Sequential number", Integer.parseInt(element.substring(10,14)));
@@ -120,9 +120,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -142,7 +142,7 @@ public class GS1_7X extends GS1 {
         
         output.put("Title", "EXPIRY TIME");  
         output.put("AI",element.substring(0,4));
-        output.put("Data",element.substring(4));
+        output.put("datafield",element.substring(4));
         output.put("YY",Integer.parseInt(element.substring(4,6)));
         output.put("MM",Integer.parseInt(element.substring(6,8)));
         output.put("DD",Integer.parseInt(element.substring(8,10)));
@@ -175,9 +175,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -206,9 +206,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -229,6 +229,7 @@ public class GS1_7X extends GS1 {
         
         output.put("Title", "FIRST FREEZE DATE");  
         output.put("AI",element.substring(0,4));
+        output.put("datafield", element.substring(4));
         output.put("Data",element.substring(4));
         output.put("Year",Integer.parseInt(element.substring(4,6)));
         output.put("Month", Integer.parseInt(element.substring(6,8)));
@@ -267,9 +268,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -297,9 +298,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -328,9 +329,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -360,9 +361,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -392,9 +393,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -424,9 +425,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -456,9 +457,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -488,9 +489,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -521,9 +522,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(4, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(4);
         
         output.put("datafield", datafield);
         
@@ -554,9 +555,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -587,9 +588,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -620,9 +621,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -653,9 +654,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -677,7 +678,6 @@ public class GS1_7X extends GS1 {
         
         output.put("Title", "NHRN AIM");  
         output.put("AI",element.substring(0,3));
-        output.put("Data",element.substring(3));
         output.put("National Healthcare Reimbursement Number",element.substring(3));
         output.put("Organisation","POrtugal INFARMED");
         output.put("element",element);
@@ -686,9 +686,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
@@ -710,7 +710,6 @@ public class GS1_7X extends GS1 {
         
         output.put("Title", "PROCESSOR # s");  
         output.put("AI",element.substring(0,4));
-        output.put("Data",element.substring(4));
         output.put("Certification Scheme",Integer.parseInt(element.substring(4,6)));
         output.put("Certification Reference",element.substring(6));
         output.put("Element",element);
@@ -719,9 +718,9 @@ public class GS1_7X extends GS1 {
         String datafield;
 
         if (c == '%' || c == '\u001D')
-            datafield = element.substring(2, element.length() - 1);
+            datafield = element.substring(3, element.length() - 1);
         else
-            datafield = element.substring(2);
+            datafield = element.substring(3);
         
         output.put("datafield", datafield);
         
