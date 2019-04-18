@@ -100,6 +100,18 @@ public class GS1_8X extends GS1 {
         output.put("Cellular mobile telephone identifier" , element.charAt(4));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield; 
+           
+        if (c == '%' || c == '\u001D') {
+             datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
+        
         return output;
     }
     
@@ -113,11 +125,22 @@ public class GS1_8X extends GS1 {
         
         output.put("title", "GRAI");
         output.put("ai", element.substring(0,4));
-        output.put("datafield", element.substring(4));
         output.put("GS1 Company Prefix", element.substring(4,18));
         output.put("Check digit", element.charAt(18));
         output.put("Serial component", element.substring(19));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
         
         return output;
     }
@@ -134,6 +157,18 @@ public class GS1_8X extends GS1 {
         output.put("ai", element.substring(0,4));
         output.put("GIAI", element.substring(4));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
         
         return output;                
     }
@@ -186,6 +221,18 @@ public class GS1_8X extends GS1 {
         output.put("IBAN", element.substring(4));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
+        
         return output;
     }
     
@@ -208,6 +255,18 @@ public class GS1_8X extends GS1 {
         output.put("seconds", element.substring(14,16));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
+        
         return output;
     }
     
@@ -223,6 +282,18 @@ public class GS1_8X extends GS1 {
         output.put("ai", element.substring(0,4));
         output.put("AIM parameters", element.substring(4));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
         
         return output;
     }
@@ -240,6 +311,18 @@ public class GS1_8X extends GS1 {
         output.put("CPID", element.substring(4));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
+        
         return output;
     }
     
@@ -255,6 +338,18 @@ public class GS1_8X extends GS1 {
         output.put("ai", element.substring(0,4));
         output.put("serial", element.substring(4));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
         
         return output;
     }
@@ -272,6 +367,18 @@ public class GS1_8X extends GS1 {
         output.put("version", element.substring(4));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
+        
         return output;
     }
     
@@ -287,6 +394,18 @@ public class GS1_8X extends GS1 {
         output.put("ai", element.substring(0, 4));
         output.put("GMN", element.substring(4));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
         
         return output;
     }
@@ -340,6 +459,18 @@ public class GS1_8X extends GS1 {
         output.put("SRIN", element.substring(4));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
+        
         return output;
     }
     
@@ -355,6 +486,18 @@ public class GS1_8X extends GS1 {
         output.put("ai", element.substring(0,4));
         output.put("reference number", element.substring(4));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
         
         return output;
     }
@@ -390,6 +533,18 @@ public class GS1_8X extends GS1 {
         output.put("ai", element.substring(0,4));
         output.put("coupon code", element.substring(4));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
                 
         return output;      
     }
@@ -423,6 +578,18 @@ public class GS1_8X extends GS1 {
         output.put("coupon code", element.substring(4));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
+        
         return output;
     }
     
@@ -438,6 +605,18 @@ public class GS1_8X extends GS1 {
         output.put("ai", element.substring(0,4));
         output.put("URL", element.substring(4));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D') {
+            datafield = element.substring(2, element.length() - 1);
+        }
+        else {
+            datafield = element.substring(2);
+        }
+        
+        output.put("datafield", datafield);
         
         return output;
     }

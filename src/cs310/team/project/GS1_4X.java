@@ -58,6 +58,16 @@ public class GS1_4X extends GS1 {
         output.put("Customer's purchase order number", element.substring(3) );
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
     }
@@ -77,6 +87,16 @@ public class GS1_4X extends GS1 {
         output.put("ai", element.substring(0, 3) );
         output.put("number", element.substring(3) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         
@@ -117,6 +137,16 @@ public class GS1_4X extends GS1 {
         output.put("ai", element.substring(0, 3) );
         output.put("code", element.substring(3) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         
@@ -236,6 +266,16 @@ public class GS1_4X extends GS1 {
         output.put("code", element.substring(3) );
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
     }
@@ -256,6 +296,16 @@ public class GS1_4X extends GS1 {
         output.put("ISO country code", element.substring(3,6));
         output.put("Postal code", element.substring(6) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         
@@ -297,6 +347,16 @@ public class GS1_4X extends GS1 {
         output.put("ISO country code(s)", element.substring(3) );
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
     }
@@ -337,6 +397,16 @@ public class GS1_4X extends GS1 {
         output.put("ISO country code", element.substring(3) );
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
     }
@@ -376,6 +446,16 @@ public class GS1_4X extends GS1 {
         output.put("ai", element.substring(0, 3) );
         output.put("ISO subdivision code", element.substring(3) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         

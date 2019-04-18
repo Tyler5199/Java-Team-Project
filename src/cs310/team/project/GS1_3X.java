@@ -96,6 +96,16 @@ public class GS1_3X extends GS1 {
         output.put("variable count", Integer.parseInt( element.substring(2, 8) ));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
     }
@@ -825,6 +835,16 @@ public class GS1_3X extends GS1 {
         output.put("count", Integer.parseInt( element.substring(2) ));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
     }
@@ -845,6 +865,16 @@ public class GS1_3X extends GS1 {
         output.put("amount", Integer.parseInt( element.substring(4) ));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
     }
@@ -864,6 +894,16 @@ public class GS1_3X extends GS1 {
         output.put("amount", Integer.parseInt( element.substring(7) ));
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
     }
@@ -881,6 +921,16 @@ public class GS1_3X extends GS1 {
         output.put("ai", element.substring(0, 4) );
         output.put("price", Integer.parseInt( element.substring(4) ));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         
@@ -900,6 +950,16 @@ public class GS1_3X extends GS1 {
         output.put("ISOccode", Integer.parseInt( element.substring(4, 7) ));
         output.put("price", Integer.parseInt( element.substring(7) ));
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         

@@ -46,6 +46,16 @@ public class GS1_9X extends GS1 {
         output.put("Data field", element.substring(2) );
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
         }
@@ -66,6 +76,16 @@ public class GS1_9X extends GS1 {
         output.put("data", element.substring(2));
         output.put("Data field", element.substring(2) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         
@@ -88,6 +108,16 @@ public class GS1_9X extends GS1 {
         output.put("Data field", element.substring(2) );
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
         }
@@ -108,6 +138,16 @@ public class GS1_9X extends GS1 {
         output.put("data", element.substring(2));
         output.put("Data field", element.substring(2) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         
@@ -130,6 +170,16 @@ public class GS1_9X extends GS1 {
         output.put("Data field", element.substring(2) );
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
         }
@@ -150,6 +200,16 @@ public class GS1_9X extends GS1 {
         output.put("data", element.substring(2));
         output.put("Data field", element.substring(2) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         
@@ -172,6 +232,16 @@ public class GS1_9X extends GS1 {
         output.put("Data field", element.substring(2) );
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
         }
@@ -192,6 +262,16 @@ public class GS1_9X extends GS1 {
         output.put("data", element.substring(2));
         output.put("Data field", element.substring(2) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         
@@ -214,6 +294,16 @@ public class GS1_9X extends GS1 {
         output.put("Data field", element.substring(2) );
         output.put("element", element);
         
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
+        
         return output;
         
         }
@@ -234,6 +324,16 @@ public class GS1_9X extends GS1 {
         output.put("data", element.substring(2));
         output.put("Data field", element.substring(2) );
         output.put("element", element);
+        
+        char c = element.charAt(element.length() - 1);
+        String datafield;
+
+        if (c == '%' || c == '\u001D')
+            datafield = element.substring(2, element.length() - 1);
+        else
+            datafield = element.substring(2);
+        
+        output.put("datafield", datafield);
         
         return output;
         
