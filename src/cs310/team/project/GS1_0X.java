@@ -255,7 +255,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "SERIAL");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield", element.substring(2) );
+        
         output.put("element", element);
         
                 
@@ -266,6 +266,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+        output.put("datafield", element.substring(2) );
         
         return output;
         
@@ -284,7 +286,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "CPV");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield", element.substring(2) );
+       
         output.put("element", element);
         
                 char c = element.charAt(element.length() - 1);
@@ -294,6 +296,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+         output.put("datafield", element.substring(2) );
         
         return output;
         
@@ -312,7 +316,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "ADDITIONAL ID");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3, 4) );
+        
         output.put("element", element);
         
                 char c = element.charAt(element.length() - 1);
@@ -322,6 +326,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+        output.put("datafield", element.substring(3, 4) );
         
         return output;
         
@@ -340,7 +346,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "CUST. PART NO.");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(4) );
+        
         output.put("element", element);
         
                 char c = element.charAt(element.length() - 1);
@@ -350,6 +356,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+        output.put("datafield", element.substring(4) );
         
         return output;
         
@@ -368,7 +376,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "MTO VARIANT");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(4, 6) );
+        
         output.put("element", element);
         
                 char c = element.charAt(element.length() - 1);
@@ -378,6 +386,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+        output.put("datafield", element.substring(4, 6) );
         
         return output;
         
@@ -396,7 +406,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "PCN");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(4) );
+       
         output.put("element", element);
         
                 char c = element.charAt(element.length() - 1);
@@ -406,6 +416,9 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+         output.put("datafield", element.substring(4) );
+         
         return output;
         
     }
@@ -423,7 +436,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "SECONDARY SERIAL");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(4) );
+        
         output.put("element", element);
         
                 char c = element.charAt(element.length() - 1);
@@ -433,6 +446,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+        output.put("datafield", element.substring(4) );
         
         return output;
         
@@ -451,7 +466,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "REF. TO SOURCE");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(4) );
+        
         output.put("element", element);
         
                 char c = element.charAt(element.length() - 1);
@@ -461,6 +476,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+        output.put("datafield", element.substring(4) );
         
         return output;
         
@@ -479,7 +496,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "GDTI");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(4, 12) );
+        
         output.put("number #2", element.substring(13) );
         output.put("element", element);
         
@@ -490,6 +507,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+        output.put("datafield", element.substring(4, 12) );
         
         return output;
         
@@ -508,7 +527,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "GLN EXTENSION COMPONENT");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(4) );
+        
         output.put("element", element);
         
                 char c = element.charAt(element.length() - 1);
@@ -518,6 +537,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+        output.put("datafield", element.substring(4) );
         
         return output;
         
@@ -536,7 +557,7 @@ public class GS1_0X extends GS1 {
         
         output.put("title", "GDTI");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(4, 12) );
+        
         output.put("number #2", element.substring(13) );
         output.put("element", element);
         
@@ -547,6 +568,8 @@ public class GS1_0X extends GS1 {
             datafield = element.substring(2, element.length() - 1);
         else
             datafield = element.substring(2);
+        
+        output.put("datafield", element.substring(4, 12) );
         
         return output;
         
