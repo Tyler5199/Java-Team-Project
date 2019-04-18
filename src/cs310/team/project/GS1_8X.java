@@ -64,7 +64,7 @@ public class GS1_8X extends GS1 {
         
         output.put("title", "DIMENSIONS");
         output.put("ai", element.substring(0, 4));
-        output.put("data", element.substring(4));
+        output.put("datafield", element.substring(4));
         output.put("width", element.substring(4, 8));
         output.put("length", element.substring(8,13));
         output.put("diameter", element.substring(13, 16));
@@ -113,7 +113,7 @@ public class GS1_8X extends GS1 {
         
         output.put("title", "GRAI");
         output.put("ai", element.substring(0,4));
-        output.put("data", element.substring(4));
+        output.put("datafield", element.substring(4));
         output.put("GS1 Company Prefix", element.substring(4,18));
         output.put("Check digit", element.charAt(18));
         output.put("Serial component", element.substring(19));
@@ -164,7 +164,7 @@ public class GS1_8X extends GS1 {
         
         output.put("title", "ITIP or GCTIN");
         output.put("ai", element.substring(0,4));
-        output.put("data", element.substring(4));
+        output.put("datafield", element.substring(4));
         output.put("GTIN", element.substring(4,18));
         output.put("piece number", element.substring(18,20));
         output.put("total count", element.substring(20,22));
@@ -199,7 +199,7 @@ public class GS1_8X extends GS1 {
         
         output.put("title", "PROD TIME");
         output.put("ai", element.substring(0,4));
-        output.put("data", element.substring(4));
+        output.put("datafield", element.substring(4));
         output.put("year", element.substring(4,6));
         output.put("month", element.substring(6,8));
         output.put("day", element.substring(8,10));
@@ -301,7 +301,7 @@ public class GS1_8X extends GS1 {
         
         output.put("title", "GSRN-PROVIDER");
         output.put("ai", element.substring(0,4));
-        output.put("data", element.substring(4));
+        output.put("datafield", element.substring(4));
         output.put("GSRN Provider", element.substring(4, 21));
         output.put("Check digit", element.charAt(21));
         output.put("element", element);
@@ -319,7 +319,7 @@ public class GS1_8X extends GS1 {
         
         output.put("title", "GSRN-RECIPIENT");
         output.put("ai", element.substring(0,4));
-        output.put("data", element.substring(4));
+        output.put("datafield", element.substring(4));
         output.put("GSRN Recipient", element.substring(4,21));
         output.put("Chech digit", element.charAt(21));
         output.put("element", element);
@@ -369,7 +369,7 @@ public class GS1_8X extends GS1 {
         
         output.put("title", "ITIP CONTENT");
         output.put("ai", element.substring(0,4));
-        output.put("data", element.substring(4));
+        output.put("datafield", element.substring(4));
         output.put("GTIN", element.substring(4, 18));
         output.put("piece number", element.substring(18, 20));
         output.put("total count", element.substring(20, 22));
